@@ -1,0 +1,21 @@
+package org;
+import net.webservicex.GeoIP;
+import net.webservicex.GeoIPService;
+import net.webservicex.GeoIPServiceSoap;
+
+public class WebServiceClient {
+
+	/**
+	 * Takes ip address as parameter and print country name
+	 * @param args
+	 */
+	public static void main(String[] args) {	
+		String ipAddress = args[0];
+		GeoIPService ipService = new GeoIPService();
+		GeoIPServiceSoap ipServiceSoap = ipService.getGeoIPServiceSoap();
+		System.out.println(ipServiceSoap.getGeoIPContext());
+		GeoIP geoIP = ipServiceSoap.getGeoIP(ipAddress);
+		System.out.println(geoIP.getCountryName());		
+	}
+
+}

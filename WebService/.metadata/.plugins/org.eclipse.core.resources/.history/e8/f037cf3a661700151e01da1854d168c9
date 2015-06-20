@@ -1,0 +1,25 @@
+package org;
+
+import java.nio.MappedByteBuffer;
+
+import net.webservicex.GeoIP;
+import net.webservicex.GeoIPService;
+import net.webservicex.GeoIPServiceSoap;
+
+public class WebServiceClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String ipAddress = args[0];
+		GeoIPService ipService = new GeoIPService();
+		GeoIPServiceSoap ipServiceSoap = ipService.getGeoIPServiceSoap();
+		System.out.println(ipServiceSoap);
+		GeoIP geoIP = ipServiceSoap.getGeoIP("");
+		System.out.println(geoIP.getCountryName());
+		
+
+	}
+
+}

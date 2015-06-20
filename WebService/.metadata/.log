@@ -1,0 +1,30 @@
+!SESSION 2015-06-20 20:55:49.024 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\gc\code\Code\WebService
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 21:20:13.118
+!MESSAGE System property http.proxyHost is not set but should be 172.18.40.63.
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 21:20:13.119
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 21:20:13.121
+!MESSAGE System property http.proxyHost is not set but should be 172.18.40.63.
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 21:20:13.122
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+!SESSION 2015-06-20 22:07:12.997 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 22:08:10.496
+!MESSAGE System property http.proxyHost is not set but should be 172.18.40.63.
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-20 22:08:10.496
+!MESSAGE System property http.proxyPort is not set but should be 8080.

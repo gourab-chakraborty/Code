@@ -1,0 +1,18 @@
+package org;
+
+import net.webservicex.GeoIPService;
+import net.webservicex.GeoIPServiceSoap;
+
+public class WebServiceClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String ipAddress = args[0];
+		GeoIPService ipService = new GeoIPService();
+		GeoIPServiceSoap geoIPServiceSoap = ipService.getGeoIPServiceSoap();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package org;
+
+import java.nio.MappedByteBuffer;
+
+import javax.xml.soap.SOAPException;
+import javax.xml.ws.soap.SOAPFaultException;
+
+import net.webservicex.GeoIP;
+import net.webservicex.GeoIPService;
+import net.webservicex.GeoIPServiceSoap;
+
+public class WebServiceClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {	
+		String ipAddress = args[0];
+		GeoIPService ipService = new GeoIPService();
+		GeoIPServiceSoap ipServiceSoap = ipService.getGeoIPServiceSoap();
+		System.out.println(ipServiceSoap);
+		System.out.println(ipServiceSoap.getGeoIPContext());
+		GeoIP geoIP = ipServiceSoap.getGeoIP("74.125.239.142");
+		System.out.println(geoIP.getCountryName());		
+	}
+
+}
